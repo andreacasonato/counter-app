@@ -1,6 +1,12 @@
 const increaseButtonEl = document.querySelector('.counter__button--increase');
 const decreaseButtonEl = document.querySelector('.counter__button--decrease');
+const resetButtonEl = document.querySelector('.counter__reset-button');
 const counterValueEl = document.querySelector('.counter__value');
+
+resetButtonEl.addEventListener('click', function() {
+    // set counter value to 0
+    counterValueEl.textContent = 0;
+});
 
 decreaseButtonEl.addEventListener('click', function() {
     // get current value of counter
