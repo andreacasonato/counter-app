@@ -58,16 +58,16 @@ function incrementCounter () {
     // increment by 1
     let newValue = currentValueAsNumber + 1;
 
-    // check if new value is greater than 5
-    if (newValue > 5) {
-        // if it is, keep it 5
-        newValue = 5;
+    // check if new value is greater than 10
+    if (newValue > 10) {
+        // if it is, keep it 10
+        newValue = 10;
 
         // give visual indicator that limit has been reached
         counterEl.classList.add('counter--limit');
 
         //update counter title to say limit has been reached
-        counterTitleEl.innerHTML = 'Limit! Buy <b>Pro</b> for >5';
+        counterTitleEl.innerHTML = 'Limit! Buy <b>Pro</b> for >10';
 
         // disable both increase and decrease when limit has been reached
         increaseButtonEl.disabled = true;
